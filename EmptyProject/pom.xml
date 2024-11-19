@@ -12,6 +12,61 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <MavenPlugin.version>1.0-SNAPSHOT</MavenPlugin.version>
     </properties>
+
+    <developers>
+        <developer>
+            <id>jdoe</id>
+            <name>John Doe</name>
+            <email>jdoe@example.com</email>
+            <url>http://www.example.com/jdoe</url>
+            <organization>ACME</organization>
+            <organizationUrl>http://www.example.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/New_York</timezone>
+            <properties>
+                <picUrl>http://www.example.com/jdoe/pic</picUrl>
+            </properties>
+        </developer>
+
+        <developer>
+            <id>jdoe</id>
+            <name>John Doe</name>
+            <email>jdoe@example.com</email>
+            <url>http://www.example.com/jdoe</url>
+            <organization>ACME</organization>
+            <organizationUrl>http://www.example.com</organizationUrl>
+            <roles>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>America/New_York</timezone>
+            <properties>
+                <picUrl>http://www.example.com/jdoe/pic</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.plugin</groupId>
+                <artifactId>MavenPlugin</artifactId>
+                <version>${MavenPlugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>developer-print</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
