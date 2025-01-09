@@ -12,8 +12,17 @@
         <plugins>
             <plugin>
                 <groupId>org.plugin</groupId>
-                <artifactId>MavenPlugin</artifactId>
+                <artifactId>maven-dev-info-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>run-info-devs</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>infoDevs</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
@@ -24,6 +33,19 @@
             <name>Vazha Tsaava</name>
             <email>vazhatsaava@gmail.com</email>
             <url>https://www.github.com/vazhatsaava</url>
+            <organization>Effective-mobile</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Moscow</timezone>
+            <properties>
+            </properties>
+        </developer>
+        <developer>
+            <id>ivan</id>
+            <name>Ivan Ivanov</name>
+            <email>ivanivan@gmail.com</email>
+            <url>https://www.github.com/ivanivanov</url>
             <organization>Effective-mobile</organization>
             <roles>
                 <role>developer</role>
