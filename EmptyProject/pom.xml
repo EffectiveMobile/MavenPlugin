@@ -8,10 +8,69 @@
     <artifactId>EmptyProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.plugin</groupId>
+                <artifactId>maven-dev-info-plugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <id>run-info-devs</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>infoDevs</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <developers>
+        <developer>
+            <id>vkts</id>
+            <name>Vazha Tsaava</name>
+            <email>vazhatsaava@gmail.com</email>
+            <url>https://www.github.com/vazhatsaava</url>
+            <organization>Effective-mobile</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Moscow</timezone>
+            <properties>
+            </properties>
+        </developer>
+        <developer>
+            <id>ivan</id>
+            <name>Ivan Ivanov</name>
+            <email>ivanivan@gmail.com</email>
+            <url>https://www.github.com/ivanivanov</url>
+            <organization>Effective-mobile</organization>
+            <roles>
+                <role>developer</role>
+            </roles>
+            <timezone>Europe/Moscow</timezone>
+            <properties>
+            </properties>
+        </developer>
+    </developers>
+<dependencies>
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>2.0.9</version>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.11</version>
+    </dependency>
+</dependencies>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
 </project>
