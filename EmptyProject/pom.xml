@@ -27,6 +27,7 @@
         </developer>
     </developers>
 
+    <!-- mvn MavenPlugin:dev-print -->
     <build>
         <plugins>
             <plugin>
