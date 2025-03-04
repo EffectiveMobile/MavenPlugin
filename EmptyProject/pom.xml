@@ -8,10 +8,47 @@
     <artifactId>EmptyProject</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <parent>
+        <groupId>org.plugin</groupId>
+        <artifactId>MavenPluginParent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <developers>
+        <developer>
+            <id>dev1</id>
+            <name>Test User 1</name>
+            <email>test.user1@example.com</email>
+            <url>https://github.com/testuser1</url>
+        </developer>
+        <developer>
+            <id>dev2</id>
+            <name>Test User 2</name>
+            <email>test.user2@example.com</email>
+            <url>https://github.com/testuser2</url>
+        </developer>
+    </developers>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.plugin</groupId>
+                <artifactId>MavenPlugin</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
